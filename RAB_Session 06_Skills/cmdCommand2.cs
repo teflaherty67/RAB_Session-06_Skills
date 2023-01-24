@@ -13,7 +13,7 @@ using System.Diagnostics;
 namespace RAB_Session_06_Skills
 {
     [Transaction(TransactionMode.Manual)]
-    public class Command : IExternalCommand
+    public class cmdCommand2 : IExternalCommand
     {
         public Result Execute(
           ExternalCommandData commandData,
@@ -25,7 +25,7 @@ namespace RAB_Session_06_Skills
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-
+            TaskDialog.Show("Test", "Got to Command 2");
 
             return Result.Succeeded;
         }

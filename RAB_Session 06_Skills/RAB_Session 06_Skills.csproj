@@ -52,7 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Command.cs" />
+    <Compile Include="cmdCommand2.cs" />
+    <Compile Include="cmdCommand1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
