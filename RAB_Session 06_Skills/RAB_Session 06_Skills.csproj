@@ -49,16 +49,36 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="cmdCommand2.cs" />
     <Compile Include="cmdCommand1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="RAB_Session 06_Skills.addin" />
+    <EmbeddedResource Include="Resources\Yellow_32.png" />
+    <EmbeddedResource Include="Resources\Yellow_16.png" />
+    <EmbeddedResource Include="Resources\Red_32.png" />
+    <EmbeddedResource Include="Resources\Red_16.png" />
+    <EmbeddedResource Include="Resources\Green_32.png" />
+    <EmbeddedResource Include="Resources\Green_16.png" />
+    <EmbeddedResource Include="Resources\Blue_32.png" />
+    <EmbeddedResource Include="Resources\Blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
