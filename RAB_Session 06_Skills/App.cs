@@ -28,12 +28,12 @@ namespace RAB_Session_06_Skills
 
             // step 3: create button data instances
 
-            PushButtonData pData1 = new PushButtonData("button1", "Button 1", assemblyName, "RAB_Session_06_Skills.cmdCommand1");
+            PushButtonData pData1 = new PushButtonData("button1", "This is \rButton 1", assemblyName, "RAB_Session_06_Skills.cmdCommand1");
             PushButtonData pData2 = new PushButtonData("button2", "Button 2", assemblyName, "RAB_Session_06_Skills.cmdCommand2");
             PushButtonData pData3 = new PushButtonData("button3", "Button 3", assemblyName, "RAB_Session_06_Skills.cmdCommand1");
             PushButtonData pData4 = new PushButtonData("button4", "Button 4", assemblyName, "RAB_Session_06_Skills.cmdCommand2");
             PushButtonData pData5 = new PushButtonData("button5", "Button 5", assemblyName, "RAB_Session_06_Skills.cmdCommand1");
-            PushButtonData pData6 = new PushButtonData("button6", "This is \rButton 6", assemblyName, "RAB_Session_06_Skills.cmdCommand2");
+            PushButtonData pData6 = new PushButtonData("button6", "Button 6", assemblyName, "RAB_Session_06_Skills.cmdCommand2");
 
             PulldownButtonData pullDownData1 = new PulldownButtonData("pulldown1", "Pulldown Button");
 
@@ -53,6 +53,8 @@ namespace RAB_Session_06_Skills
             pData5.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Blue_16);
             pData6.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Red_32);
             pData6.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Red_16);
+
+            pullDownData1.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Blue_32);
 
             // step 5: add tool tips
 
