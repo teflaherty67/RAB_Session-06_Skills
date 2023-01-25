@@ -37,7 +37,18 @@ namespace RAB_Session_06_Skills
 
             // step 4: add images
 
-
+            pData1.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Blue_32);
+            pData1.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Blue_16);
+            pData2.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Red_32);
+            pData2.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Red_16);
+            pData3.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Yellow_32);
+            pData3.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Yellow_16);
+            pData4.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Green_32);
+            pData4.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Green_16);
+            pData5.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Blue_32);
+            pData5.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Blue_16);
+            pData6.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Red_32);
+            pData6.Image = Utils.BitmapToImageSource(RAB_Session_06_Skills.Properties.Resources.Red_16);
 
             // step 5: add tool tips
 
