@@ -5,6 +5,7 @@ using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 #endregion
 
@@ -15,10 +16,19 @@ namespace RAB_Session_06_Skills
         public Result OnStartup(UIControlledApplication a)
         {
             string assemblyName = Utils.GetAssemblyName();
-            
+
             // step 1: create ribbon tab (if needed)
 
-            a.CreateRibbonTab("Revit Add-in Bootcamp");
+            try
+            {
+                a.CreateRibbonTab("Revit Add-in Bootcamp");
+            }
+            catch (Exception ex)
+            {
+                TaskDialog.Show("Error", "Ribbon tab already exists.");
+                Debug.Print(ex.Message);
+                return Result.Failed;
+            }            
 
             // step 2: create ribbon panel(s)
 
